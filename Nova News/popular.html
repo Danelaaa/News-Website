@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+          <meta charset="UTF-8">
+          <meta http-equiv="X-UA-Compatible" content="IE=edge">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <script src="https://kit.fontawesome.com/321823a938.js" crossorigin="anonymous"></script>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+          <link rel="shortcut icon" type="image/x-icon" href="image/tab-icon.png">
+          <link rel="stylesheet" href="style/style.css">
+          <link rel="stylesheet" href="style/responsive_header.css">
+          <link rel="stylesheet" href="style/main.css">
+          <link rel="stylesheet" href="style/footer.css">
+          <link rel="stylesheet" href="style/main_articles.css">
+          <link rel="stylesheet" href="style/main_news_responsive.css">
+          <link rel="stylesheet" href="style/popular.css">
+          <link rel="stylesheet" href="style/media.css">
+          <title>Nova News</title>
+</head>
+<body class="body">
+
+
+           <!-- header start -->
+           <!-- header start -->
+           <!-- header start -->
+           <header id="header" class="header column">
+            <div class="first_header">
+                      <nav class="navbar navbar-inverse">
+                                <div class="container-fluid">
+                                  <ul class="nav navbar-nav">
+                                    <li><a href="adv.html">რეკლამა</a></li>
+                                    <li><a href="#">კონტაქტი</a></li>
+                                  </ul>
+                                  <ul class="header_social nav navbar-nav navbar-right">
+                                    <li><a href="https://www.facebook.com/NovaNewsGe-107876461390009"  target="_blank"><i style="color: #9d9d9d;" class="fab fa-facebook"></i></a></li>
+                                    <li><a href="https://www.instagram.com/novanews.ge"  target="_blank"><i style="color: #9d9d9d;" class="fab fa-instagram"></i></a></li>
+                                    <li><a href="https://twitter.com/NovanewsG"  target="_blank"><i style="color: #9d9d9d;" class="fab fa-twitter"></i></a></li>
+                                    <li><a href="https://www.youtube.com/channel/UCeh9IMy2sPrFqXJDf0WId_A"  target="_blank"><i style="color: #9d9d9d;" class="fab fa-youtube"></i></a></li>
+                                  </ul>
+                                </div>
+                      </nav>
+            </div>
+
+            <div class="second_header">
+                      <nav class="navbar navbar-inverse second_header_nav">
+                                <div class="container-fluid">
+                                  <ul class="nav navbar-nav header_about">
+                                    <li>
+                                              <a href="Home.html">
+                                                        <img class="logo" src="image/logo.png" alt="">
+                                              </a>
+                                    </li>
+                                  </ul>
+                                  <ul class="header_news nav navbar-nav navbar-right" style="color: white;">
+                                    <li class="popular_news" onmouseover="popular_news()" onmouseout="popular_news_moveout()">
+                                              <a href="popular.html" style="color: white;">
+                                                    <i class="fas fa-heart" id="popular_news_a_i"></i>
+                                                    <p>#პოპულარული</p>
+                                              </a>
+                                     </li>
+                                     <li class="best_news" onmouseover="best_news()" onmouseout="best_news_moveout()">
+                                          <a href="best.html" style="color: white;">
+                                                <i class="fas fa-eye best_news_a_i" id="best_news_a_i"></i>
+                                                <p>#რჩეული</p>
+                                          </a>
+                                      </li>
+                                      <li class="trending_news" onmouseover="trending_news()" onmouseout="trending_news_moveout()">
+                                          <a href="trending.html" style="color: white;">
+                                                <i class="fas fa-bolt" id="trending_news_a_i"></i>
+                                                <p>#ტრენდული</p>
+                                          </a>
+                                       </li>
+                                  </ul>
+                                </div>
+                      </nav>
+            </div>
+
+            <div class="third_header">
+                  <nav class="navbar navbar-inverse third_header_nav">
+                    <div class="container-fluid">
+                    <ul class="nav navbar-nav nav_category">
+                       <li style="margin-left: 0;"><a style="color: #7937b3 !important;" href="Home.html">მთავარი</a></li>
+                       <li><a href="News.html">News</a></li>
+                        <li><a href="science.html">მეცნიერება</a></li>
+                        <li><a href="sport.html">სპორტი</a></li>
+                        <li><a href="tech.html">ტექნოლოგიები</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                      <form class="search-box" action="" method="">
+                        <input type="text" name="" value="" placeholder="Search" style="color: white !important;">
+                        <button class="search-btn" type="button" name="button">
+                         <i class="fas fa-search"></i>
+                        </button>
+                      </form>
+                    </ul>
+                    </div>
+                  </nav>
+            </div>
+  </header>
+  <header style="display: none;" id="responsive_header" class="responsive_header">
+    <div class="container-fluid">
+              <img class="responsive_header_image" src="image/logo.png" alt="">
+    </div>
+     <div class="header_main_div">
+            <div class="header_main_div_first_div" onmouseover="popular_news()" onmouseout="popular_news_moveout()">
+              <a href="popular.html">
+                <i id="header_main_div_first_div_popular_a_i" class="fas fa-heart"></i>
+                <p>#პოპულარული</p>
+              </a>
+            </div>
+            <div class="header_main_div_second_div" onmouseover="best_news()" onmouseout="best_news_moveout()">
+              <a href="best.html">
+                <i id="header_main_div_first_div_best_a_i" class="fas fa-eye"></i>
+                <p>#რჩეული</p>
+              </a>
+            </div>
+            <div class="header_main_div_third_div" onmouseover="trending_news()" onmouseout="trending_news_moveout()">
+              <a href="trending.html">
+                <i id="header_main_div_first_div_trending_a_i" class="fas fa-bolt"></i>
+                <p>#ტრენდული</p>
+              </a>
+            </div>
+  </div>
+
+
+      <!-- responsive header start -->
+      <!-- responsive header start -->
+      <!-- responsive header start -->
+    
+    
+      <div class="responsive_about_section ">
+              <div class="menu-btn">
+                        <i class="fas fa-bars"></i>
+                      </div>
+                      <div class="side-bar">
+                        <div class="close-btn">
+                          <i class="fas fa-times"></i>
+                        </div>
+                        <div class="menu">
+                          <div class="item"><a href="Home.html"><i class="fas fa-home"></i>მთავარი</a></div>
+                          <div class="item">
+                            <a href="News.html" class="sub-btn"><i class="far fa-newspaper"></i>News <!-- <i class="fas fa-angle-right dropdown"></i> --></a>
+                            <!-- <div class="sub-menu">
+                              <a href="#" class="sub-item">Sub Item 01</a>
+                              <a href="#" class="sub-item">Sub Item 02</a>
+                              <a href="#" class="sub-item">Sub Item 03</a>
+                            </div> -->
+                          </div>
+                          <div class="item"><a href="science.html"><i class="fas fa-atom"></i>მეცნიერება</a></div>
+                          <div class="item">
+                            <a href="sport.html" class="sub-btn"><i class="fas fa-running"></i>სპორტი  <!-- <i class="fas fa-angle-right dropdown"></i> --> </a>
+                            <!-- <div class="sub-menu">
+                              <a href="#" class="sub-item">Sub Item 01</a>
+                              <a href="#" class="sub-item">Sub Item 02</a>
+                            </div> -->
+                          </div>
+                          <div class="item"><a href="tech.html"><i class="fas fa-laptop-code"></i>ტექნოლოგიები</a></div>
+                          <div class="item">
+                                  <a href="#"><i class="far fa-address-book"></i>კონტაქტი</a>
+                          </div>
+                          <div class="item">
+                                  <a href="adv.html"><i class="fas fa-ad"></i>რეკლამა</a>
+                          </div>
+                          <div class="responsive_nav_social">
+                          <a href="https://www.instagram.com/novanews.ge" target="_blank"><i class="fab fa-instagram"></i></a>
+                          <a href="https://www.facebook.com/NovaNewsGe-107876461390009" target="_blank"><i style="margin-left: 10px;" class="fab fa-facebook"></i></a>
+                          <a href="https://twitter.com/NovanewsG"  target="_blank"><i style="margin-left: 10px;" class="fab fa-twitter"></i></a>
+                          <a href="https://www.youtube.com/channel/UCeh9IMy2sPrFqXJDf0WId_A"  target="_blank"><i style="margin-left: 10px;" class="fab fa-youtube"></i></a>
+                          </div>
+                        </div>
+                       </div>
+                       <ul class="nav navbar-nav navbar-right">
+                        <form style="margin-top: 30px" class="search-box" action="" method="">
+                          <input type="text" name="" value="" placeholder="Search" style="color: white !important;">
+                          <button class="search-btn" type="button" name="button">
+                           <i class="fas fa-search"></i>
+                          </button>
+                        </form>
+                      </ul>
+    </div>
+</header> 
+
+
+  <!-- header end -->
+          
+  <!-- main start -->
+  <a id="backtotop"><i class="fa fa-chevron-up"></i></a>
+        <main class="popular_main">
+                  <div class="popular_main_title">
+                            <h1>#პოპულარული</h1>
+                            <p>ყველა დროის პოპულარული სტატია</p>
+                            <div class="popular_main_title_border"></div>
+                  </div>
+          <div class="popular_main_div">
+             <div class="popular_main_div_column">
+                    <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                     <div class="popular_main_div_left">
+                              <div class="popular_main_div_left_left">
+                                        <a href="article.html"><img src="image/images (1).jpg" alt=""></a>
+                              </div>
+                              <div class="popular_main_div_left_right">
+                                        <a href="article.html"><h2>დაკარგული კონტინენტი 375 წლის შემდეგ აღმოაჩინეს!</h2></a>
+                              </div>
+                    </div>
+                    
+          </div>
+                    <div class="popular_main_div_right">
+                              <div class="popular_main_div_right_big_ad">
+                                        <a href="#">
+                                                  <img src="image/placeholder.png" alt="">
+                                        </a>
+                              </div>
+                              <div class="popular_main_div_right_big_ad">
+                                        <a href="#">
+                                                  <img src="image/placeholder.png" alt="">
+                                        </a>
+                              </div>
+                              <div class="popular_main_div_right_small_ad">
+                                        <a href="#">
+                                                  <img src="image/placeholder.png" alt="">
+                                        </a>
+                              </div>
+                              <div class="popular_main_div_right_big_ad" style="margin-top: 5%;">
+                                        <a href="#">
+                                                  <img src="image/placeholder.png" alt="">
+                                        </a>
+                              </div>
+                              <div class="popular_main_div_right_small_ad">
+                                        <a href="#">
+                                                  <img src="image/placeholder.png" alt="">
+                                        </a>
+                              </div>
+                              <div class="popular_main_div_right_small_ad">
+                                        <a href="#">
+                                                  <img src="image/placeholder.png" alt="">
+                                        </a>
+                              </div>
+                              <div class="popular_main_div_right_small_ad">
+                                        <a href="#">
+                                                  <img src="image/placeholder.png" alt="">
+                                        </a>
+                              </div>
+                    </div>
+          </div>
+        </main>
+
+    <!-- footer -->
+
+    <footer class="footer">
+      <div class="main-content">
+          <div class="left box">
+            <h2>ჩვენს შესახებ</h2>
+            <div class="content">
+                <p>Nova News ეს არის ახალი მულტიმედიური პროქტი რომელიც შეიქმნა 2021 წელს.ეს არის ადგილი სადაც თქვენ შეგიძლიათ იხილოთ სხვადასხვა სტატიები სხვადასხვა თემების შესახებ.Nova News არის Nova Development-ის საკუთრება.Nova News ჩვენთვს ნიშნავს ერთადერთ და უიშვიათეს მოვლენას .</p>
+              <div class="social">
+                <a href="https://www.facebook.com/NovaNewsGe-107876461390009"><span class="fab fa-facebook-f"></span></a>
+                <a href="https://twitter.com/NovanewsG"><span class="fab fa-twitter"></span></a>
+                <a href="https://www.instagram.com/novanews.ge"><span class="fab fa-instagram"></span></a>
+                <a href="https://www.youtube.com/channel/UCeh9IMy2sPrFqXJDf0WId_A"><span class="fab fa-youtube"></span></a>
+              </div>
+            </div>
+          </div>
+  
+          <div id="contact" class="center box">
+            <h2>მისამართი</h2>
+            <div class="content">
+              <div class="place">
+                <span class="fas fa-map-marker-alt"></span>
+                <span class="text">Tbilisi, Georgia</span>
+              </div>
+              <div class="phone">
+                <span class="fas fa-phone-alt"></span>
+                <span class="text">+995 555 55 55 55</span>
+              </div>
+              <div class="email">
+                <span class="fas fa-envelope"></span>
+                <span class="text">Dorado@support.ge</span>
+              </div>
+            </div>
+          </div>
+  
+          <div class="right box">
+            <h2>კონტაქტი</h2>
+            <div class="content">
+              <form action="#">
+                <div class="email">
+                  <div class="text">Email *</div>
+                  <input type="email" required>
+                </div>
+                <div class="msg">
+                  <div class="text">Message *</div>
+                  <input type="text" required>
+                  <!-- <changeit rows="2" cols="25" required></changeit> -->
+                </div>
+                <div class="f_btn">
+                  <button type="submit">Send</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="bottom">
+          <center>
+            <span class="credit">Created By <a href="#">Nova Development</a> | </span>
+            <span class="far fa-copyright"></span><span> 2021 All rights reserved.</span>
+          </center>
+        </div>
+  </footer>
+  
+
+
+
+
+
+
+          <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+          <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js" integrity="sha384-KsvD1yqQ1/1+IA7gi3P0tyJcT3vR+NdBTt13hSJ2lnve8agRGXTTyNaBYmCR/Nwi" crossorigin="anonymous"></script>
+          <script src="JS/index.js"></script>
+</body>
+</html>

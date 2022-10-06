@@ -1,0 +1,101 @@
+main{
+          width: 100%;
+          height: auto;
+}
+.article_main_div{
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+          margin-top: 8%;
+}
+.article_main_div_left{
+          width: 70%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+}
+.article_main_div_left_header{
+          width: 70%;
+          margin-left: 9%;
+}
+.article_main_div_left_header a{
+          text-decoration: none;
+          list-style-type: none;
+          font-weight: bold;
+          color: black;
+}
+.article_main_div_left_header h3{
+          font-size: 35px;
+          color: black;
+          font-weight: bold;
+}
+.article_main_div_left_header p{
+          font-size: 20px;
+          color: gray;
+          margin-top: 3%;
+          font-family: "BPG Banner", sans-serif;
+}
+.article_main_header_border{
+          border-bottom: solid gray 0.1px;
+          width: 110%;
+          margin-top: 3%;
+}
+.article_main_div_left_main{
+          width: 100%;
+          height: auto;
+          display: flex;
+          margin-left: 9%;
+}
+.article_main_div_left_main_left{
+          width: 5%;
+          margin-top: 4%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+}
+.article_main_div_left_main_left h3{
+          font-size: 30px;
+          font-weight: bold;
+}
+.article_main_div_left_main_left span{
+          font-size: 13px;
+          margin-top: -10px;
+          color: gray;
+}
+.article_main_div_left_main_left i{
+          font-size: 27px;
+          margin-top: 10px;
+          margin-left: 5px;
+}
+.article_main_div_left_main_right{
+          width: 90%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          margin-left: 2%;
+          margin-top: 2%;
+}
+.article_main_div_left_main_right img{
+          width: 70%;
+          height: auto;
+          object-fit: cover;
+          margin-top: 4%;
+}
+.article_main_div_left_main_right p{
+          font-size: 18px;
+          margin-top: 3%;
+          width: 70%;
+}
+.article_main_div_right{
+          width: 29%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          margin-left: -1%;
+}
+.article_main_div_right img{
+          width: 100%;
+          height: auto;
+          margin-top: 3%;
+}

@@ -1,0 +1,95 @@
+.news_main{
+          width: 100%;
+          margin-top: 5%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+}
+.news_main_container{
+          width: 90%;
+          display: grid;
+          grid-template-columns: repeat(auto-fit,minmax(310px,1fr));
+          margin-top: 3%;
+}
+.news_main_title{
+          width: 100%;
+          height: auto;
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          text-align: center;
+}
+.news_main_title h3{
+          font-size: 35px;
+          font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.news_main_title h4{
+          font-size: 22px;
+          margin-top: 3%;
+          font-weight: bold;
+}
+.news_main_title_border{
+          width: 100%;
+          border-bottom: solid rgb(201, 201, 201) 1px;
+          margin-top: 1%;
+}
+.news_main_container a{
+          text-decoration: none;
+          list-style-type: none;
+          color: black;
+}
+.news_main_container_box{
+          height: auto;
+          color: black;
+          position: relative;
+          display: flex;
+          flex-direction: column;
+}
+.news_main_container_box_top{
+          width: 100%;
+          height: auto;
+          position: relative;
+}
+.news_main_container_box_top img{
+          width: 95%;
+          height: 200px;
+          position: relative;
+}
+.news_main_container_box_bottom{
+          width: 90%;
+          height: 100px;
+}
+.news_main_container_box_bottom h3{
+          font-size: 19px;
+          margin-top: 10px;
+          margin-left: 3px;
+}
+.news_main_author{
+          width: 150px;
+          height: auto;
+          display: flex;
+          flex-direction: row;
+}
+.news_main_shares{
+          width: 180px;
+          height: 25px;
+          position: absolute;
+          z-index: 1;
+          background-color: white;
+          margin-top: 175px;
+          display: flex;
+          flex-direction: row;
+          color: #999999;
+}
+.news_main_shares i{
+          margin-top: 3px;
+}
+.news_main_shares p{
+          margin-left: 7px;
+}
+.news_main_shares p a{
+          color: black;
+}
